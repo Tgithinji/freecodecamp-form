@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1 id="title">AirBNB Survey Form</h1>
+    <p id="description">Thank you for taking your time to answer a few questions</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Name: 
+          <input id="name" type="text" name="name" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label"> Email: 
+          <input id="email" type="email" name="email" placeholder="Enter your email" required />
+        </label>
+        <label for="number" id="number-label"> age
+          <input id="number" type="number" name="age" required min="13" max="100" placeholder="age" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Would you recommend us to your friends and collegues?</label>
+        <select id="dropdown">
+          <option value="">select</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <p>Did you enjoy your stay at our place?</p>
+        <label for="yes"> 
+          <input id ="yes" name="option" type="radio" value="yes"> Yes
+        </label>
+        <label for="no">
+          <input id="no" name="option" type="radio" value="no"> No
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>Where would you like us to improve on?</p>
+        <label for="wifi"> 
+          <input id="wifi" name="wifi" type="checkbox" value="wifi" /> Internet
+        </label>
+        <label for="decorations">
+          <input id="decorations" name="decorations" value="decorations" type="checkbox"> Interior Design
+        </label>
+        <label for="security">
+          <input id="security" name="security" type="checkbox" value="security"> Security
+        </label>
+        <label for="clean">
+          <input id="clean" name="clean" type="checkbox" value="clean"> Cleanliness
+        </label>
+        <label for="supplies">
+          <input id="supplies" name="supplies" type="checkbox" value="supplies"> Supplies
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="suggestions">Any comments, suggestions or complaints
+          <textarea id="suggestions" name="suggestions" placeholder="Add a comment.." rows="5" cols="20" ></textarea></label>
+      </fieldset>
+     <input id="submit" type="submit" value="SUBMIT" name="submit" />
+    </form>
+  </body>
+</html>
